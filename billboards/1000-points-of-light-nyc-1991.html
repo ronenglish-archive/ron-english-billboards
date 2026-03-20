@@ -32,7 +32,7 @@
     }
 
     .wrap{
-      max-width:1100px;
+      max-width:1200px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -73,18 +73,18 @@
     }
 
     .page-title{
-      margin:0 0 10px;
+      margin:0;
       font-size:clamp(2rem,4vw,3.15rem);
       line-height:1.05;
       letter-spacing:-.02em;
     }
 
     .hero{
-      margin:30px 0;
+      margin:30px 0 26px;
       border:1px solid var(--border);
       border-radius:var(--radius);
       overflow:hidden;
-      background:#fff;
+      background:var(--panel);
       box-shadow:var(--shadow);
     }
 
@@ -96,25 +96,26 @@
     }
 
     .gallery{
-      margin-top:26px;
       display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:18px;
+      grid-template-columns:1fr;
+      gap:22px;
     }
 
     .gallery-item{
       border:1px solid var(--border);
       border-radius:16px;
       overflow:hidden;
-      background:#fff;
+      background:var(--panel);
       box-shadow:var(--shadow);
+      padding:14px;
     }
 
     .gallery-item img{
       display:block;
       width:100%;
-      height:auto;
-      background:#f3f4f6;
+      aspect-ratio:16 / 9;
+      object-fit:contain;
+      background:var(--panel);
     }
 
     footer{
@@ -126,12 +127,12 @@
     }
 
     @media (max-width:700px){
-      .gallery{
-        grid-template-columns:1fr;
-      }
-
       .wrap{
         padding:22px 14px 48px;
+      }
+
+      .gallery-item{
+        padding:10px;
       }
     }
   </style>
@@ -156,14 +157,6 @@
     </figure>
 
     <section class="gallery" aria-label="Image gallery">
-      <figure class="gallery-item">
-        <img
-          src="../images/billboards/1000-points-of-light-nyc-1991.jpg"
-          alt="1000 Points of Light, NYC, 1991 by Ron English"
-          loading="lazy"
-        />
-      </figure>
-
       <figure class="gallery-item">
         <img
           src="../images/billboards/1000-points-2.jpg"
