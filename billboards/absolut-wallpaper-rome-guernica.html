@@ -13,6 +13,7 @@
       --shadow:0 10px 30px rgba(0,0,0,.08);
       --radius:18px;
       --bg:#ffffff;
+      --panel:#f8fafc;
     }
 
     *{
@@ -31,7 +32,7 @@
     }
 
     .wrap{
-      max-width:1100px;
+      max-width:1200px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -72,7 +73,7 @@
     }
 
     .page-title{
-      margin:0 0 10px;
+      margin:0;
       font-size:clamp(2rem,4vw,3.15rem);
       line-height:1.05;
       letter-spacing:-.02em;
@@ -83,15 +84,25 @@
       border:1px solid var(--border);
       border-radius:var(--radius);
       overflow:hidden;
-      background:#fff;
+      background:var(--panel);
       box-shadow:var(--shadow);
     }
 
-    .hero img{
+    .image-link{
+      display:block;
+      text-decoration:none;
+    }
+
+    .image-link img{
       display:block;
       width:100%;
       height:auto;
       background:#f3f4f6;
+      transition:transform .15s ease;
+    }
+
+    .image-link:hover img{
+      transform:scale(1.01);
     }
 
     .gallery{
@@ -104,15 +115,15 @@
       border:1px solid var(--border);
       border-radius:16px;
       overflow:hidden;
-      background:#fff;
+      background:var(--panel);
       box-shadow:var(--shadow);
+      padding:14px;
     }
 
-    .gallery-item img{
-      display:block;
-      width:100%;
-      height:auto;
-      background:#f3f4f6;
+    .gallery-item .image-link img{
+      aspect-ratio:16 / 9;
+      object-fit:contain;
+      background:var(--panel);
     }
 
     footer{
@@ -131,6 +142,10 @@
       .wrap{
         padding:22px 14px 48px;
       }
+
+      .gallery-item{
+        padding:10px;
+      }
     }
   </style>
 </head>
@@ -147,91 +162,168 @@
     </header>
 
     <figure class="hero">
-      <img
-        src="../images/billboards/absolut-wallpaper-rome-guernica.jpg"
-        alt="Absolut Wallpaper Rome - Guernica by Ron English"
-      />
+      <a
+        class="image-link"
+        href="../images/billboards/absolut-wallpaper-rome-guernica.jpg"
+        target="_blank"
+        rel="noopener"
+      >
+        <img
+          src="../images/billboards/absolut-wallpaper-rome-guernica.jpg"
+          alt="Absolut Wallpaper Rome - Guernica by Ron English"
+        />
+      </a>
     </figure>
 
     <section class="gallery" aria-label="Image gallery">
       <figure class="gallery-item">
-        <img
-          src="../images/billboards/absolut-wallpaper-rome-guernica-1.jpg"
-          alt="Absolut Wallpaper Rome - Guernica alternate view 1 by Ron English"
-          loading="lazy"
-        />
+        <a
+          class="image-link"
+          href="../images/billboards/absolut-wallpaper-rome-guernica-1.jpg"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="../images/billboards/absolut-wallpaper-rome-guernica-1.jpg"
+            alt="Absolut Wallpaper Rome - Guernica alternate view 1 by Ron English"
+            loading="lazy"
+          />
+        </a>
       </figure>
 
       <figure class="gallery-item">
-        <img
-          src="../images/billboards/absolut-wallpaper-rome-guernica-2.jpg"
-          alt="Absolut Wallpaper Rome - Guernica alternate view 2 by Ron English"
-          loading="lazy"
-        />
+        <a
+          class="image-link"
+          href="../images/billboards/absolut-wallpaper-rome-guernica-2.jpg"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="../images/billboards/absolut-wallpaper-rome-guernica-2.jpg"
+            alt="Absolut Wallpaper Rome - Guernica alternate view 2 by Ron English"
+            loading="lazy"
+          />
+        </a>
       </figure>
 
       <figure class="gallery-item">
-        <img
-          src="../images/billboards/absolut-wallpaper-rome-guernica-3.jpg"
-          alt="Absolut Wallpaper Rome - Guernica alternate view 3 by Ron English"
-          loading="lazy"
-        />
+        <a
+          class="image-link"
+          href="../images/billboards/absolut-wallpaper-rome-guernica-3.jpg"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="../images/billboards/absolut-wallpaper-rome-guernica-3.jpg"
+            alt="Absolut Wallpaper Rome - Guernica alternate view 3 by Ron English"
+            loading="lazy"
+          />
+        </a>
       </figure>
 
       <figure class="gallery-item">
-        <img
-          src="../images/billboards/absolut-wallpaper-rome-guernica-3b.jpg"
-          alt="Absolut Wallpaper Rome - Guernica alternate view 3b by Ron English"
-          loading="lazy"
-        />
+        <a
+          class="image-link"
+          href="../images/billboards/absolut-wallpaper-rome-guernica-3b.jpg"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="../images/billboards/absolut-wallpaper-rome-guernica-3b.jpg"
+            alt="Absolut Wallpaper Rome - Guernica alternate view 3b by Ron English"
+            loading="lazy"
+          />
+        </a>
       </figure>
 
       <figure class="gallery-item">
-        <img
-          src="../images/billboards/absolut-wallpaper-rome-guernica-4.jpg"
-          alt="Absolut Wallpaper Rome - Guernica alternate view 4 by Ron English"
-          loading="lazy"
-        />
+        <a
+          class="image-link"
+          href="../images/billboards/absolut-wallpaper-rome-guernica-4.jpg"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="../images/billboards/absolut-wallpaper-rome-guernica-4.jpg"
+            alt="Absolut Wallpaper Rome - Guernica alternate view 4 by Ron English"
+            loading="lazy"
+          />
+        </a>
       </figure>
 
       <figure class="gallery-item">
-        <img
-          src="../images/billboards/absolut-wallpaper-rome-guernica-5.jpg"
-          alt="Absolut Wallpaper Rome - Guernica alternate view 5 by Ron English"
-          loading="lazy"
-        />
+        <a
+          class="image-link"
+          href="../images/billboards/absolut-wallpaper-rome-guernica-5.jpg"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="../images/billboards/absolut-wallpaper-rome-guernica-5.jpg"
+            alt="Absolut Wallpaper Rome - Guernica alternate view 5 by Ron English"
+            loading="lazy"
+          />
+        </a>
       </figure>
 
       <figure class="gallery-item">
-        <img
-          src="../images/billboards/absolut-wallpaper-rome-guernica-6.jpg"
-          alt="Absolut Wallpaper Rome - Guernica alternate view 6 by Ron English"
-          loading="lazy"
-        />
+        <a
+          class="image-link"
+          href="../images/billboards/absolut-wallpaper-rome-guernica-6.jpg"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="../images/billboards/absolut-wallpaper-rome-guernica-6.jpg"
+            alt="Absolut Wallpaper Rome - Guernica alternate view 6 by Ron English"
+            loading="lazy"
+          />
+        </a>
       </figure>
 
       <figure class="gallery-item">
-        <img
-          src="../images/billboards/absolut-wallpaper-rome-guernica-7.jpg"
-          alt="Absolut Wallpaper Rome - Guernica alternate view 7 by Ron English"
-          loading="lazy"
-        />
+        <a
+          class="image-link"
+          href="../images/billboards/absolut-wallpaper-rome-guernica-7.jpg"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="../images/billboards/absolut-wallpaper-rome-guernica-7.jpg"
+            alt="Absolut Wallpaper Rome - Guernica alternate view 7 by Ron English"
+            loading="lazy"
+          />
+        </a>
       </figure>
 
       <figure class="gallery-item">
-        <img
-          src="../images/billboards/absolut-wallpaper-rome-guernica-8.jpg"
-          alt="Absolut Wallpaper Rome - Guernica alternate view 8 by Ron English"
-          loading="lazy"
-        />
+        <a
+          class="image-link"
+          href="../images/billboards/absolut-wallpaper-rome-guernica-8.jpg"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="../images/billboards/absolut-wallpaper-rome-guernica-8.jpg"
+            alt="Absolut Wallpaper Rome - Guernica alternate view 8 by Ron English"
+            loading="lazy"
+          />
+        </a>
       </figure>
 
       <figure class="gallery-item">
-        <img
-          src="../images/billboards/absolut-wallpaper-rome-guernica-9.jpg"
-          alt="Absolut Wallpaper Rome - Guernica alternate view 9 by Ron English"
-          loading="lazy"
-        />
+        <a
+          class="image-link"
+          href="../images/billboards/absolut-wallpaper-rome-guernica-9.jpg"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="../images/billboards/absolut-wallpaper-rome-guernica-9.jpg"
+            alt="Absolut Wallpaper Rome - Guernica alternate view 9 by Ron English"
+            loading="lazy"
+          />
+        </a>
       </figure>
     </section>
 
