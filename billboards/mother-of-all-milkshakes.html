@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mother of All Milkshakes | Ron English Catalogue Raisonné</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <style>
+    :root{
+      --border:#e5e7eb;
+      --muted:#4b5563;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+      --bg:#ffffff;
+      --panel:#f8fafc;
+    }
+
+    *{ box-sizing:border-box; }
+
+    html{ scroll-behavior:smooth; }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#111;
+      background:var(--bg);
+    }
+
+    .wrap{
+      max-width:1200px;
+      margin:0 auto;
+      padding:28px 18px 60px;
+    }
+
+    .nav-pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-bottom:22px;
+    }
+
+    .nav-pill{
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid #d6e1ff;
+      background:#fff;
+      color:#111;
+      text-decoration:none;
+      font-size:14px;
+      transition:background .15s ease, border-color .15s ease;
+    }
+
+    .nav-pill:hover{
+      background:#f3f6ff;
+      border-color:#bfd1ff;
+    }
+
+    .page-header{ margin-bottom:22px; }
+
+    .eyebrow{
+      margin:0 0 8px;
+      font-size:14px;
+      color:var(--muted);
+      letter-spacing:.02em;
+      text-transform:uppercase;
+    }
+
+    .page-title{
+      margin:0;
+      font-size:clamp(2rem,4vw,3.15rem);
+      line-height:1.05;
+      letter-spacing:-.02em;
+    }
+
+    .hero{
+      margin:30px 0 26px;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      overflow:hidden;
+      background:var(--panel);
+      box-shadow:var(--shadow);
+    }
+
+    .image-link{
+      display:block;
+      text-decoration:none;
+    }
+
+    .image-link img{
+      display:block;
+      width:100%;
+      height:auto;
+      background:#f3f4f6;
+      transition:transform .15s ease;
+    }
+
+    .image-link:hover img{
+      transform:scale(1.01);
+    }
+
+    footer{
+      margin-top:38px;
+      padding-top:16px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    @media (max-width:700px){
+      .wrap{ padding:22px 14px 48px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav class="nav-pills" aria-label="Page navigation">
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="index.html">Billboards &amp; Posters</a>
+    </nav>
+
+    <header class="page-header">
+      <p class="eyebrow">Billboard &amp; Poster Interventions</p>
+      <h1 class="page-title">Mother of All Milkshakes</h1>
+    </header>
+
+    <figure class="hero">
+      <a class="image-link" href="../images/billboards/mother-of-all-milkshakes.jpg">
+        <img
+          src="../images/billboards/mother-of-all-milkshakes.jpg"
+          alt="Mother of All Milkshakes by Ron English"
+        />
+      </a>
+    </figure>
+
+    <footer>
+      Published via GitHub Pages for long-term public access.
+    </footer>
+  </main>
+</body>
+</html>
