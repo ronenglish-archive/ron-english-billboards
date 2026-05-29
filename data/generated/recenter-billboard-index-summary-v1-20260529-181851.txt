@@ -1,0 +1,11 @@
+﻿Re-center billboard index summary
+Generated: 05/29/2026 18:18:51
+
+Index path: D:\github\ron-english-billboards\billboards\index.html
+Index changed: Yes
+Detail pages changed: No
+Mojibake warning after: No
+
+Backup:
+D:\github-backups\ron-english-billboards\recenter-billboard-index-v1-20260529-181851
+

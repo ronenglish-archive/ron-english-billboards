@@ -1,0 +1,15 @@
+﻿Strong mojibake repair v3 summary
+Generated: 05/29/2026 18:07:55
+
+Section: billboards
+Pages scanned:   164
+Warnings before: 
+Pages changed:   164
+Warnings after:  0
+
+CSV report:
+D:\github\ron-english-billboards\data\generated\strong-mojibake-repair-v3-billboards-20260529-180753.csv
+
+Backup:
+D:\github-backups\ron-english-billboards\strong-mojibake-repair-v3-billboards-20260529-180753
+

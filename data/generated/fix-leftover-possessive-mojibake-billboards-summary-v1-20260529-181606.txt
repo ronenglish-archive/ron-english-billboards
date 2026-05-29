@@ -1,0 +1,15 @@
+﻿Fix leftover possessive mojibake summary
+Generated: 05/29/2026 18:16:07
+
+Section: billboards
+Pages scanned:   164
+Warnings before: 0
+Pages changed:   0
+Warnings after:  0
+
+CSV report:
+D:\github\ron-english-billboards\data\generated\fix-leftover-possessive-mojibake-billboards-v1-20260529-181606.csv
+
+Backup:
+D:\github-backups\ron-english-billboards\fix-leftover-possessive-mojibake-v1-20260529-181606
+
