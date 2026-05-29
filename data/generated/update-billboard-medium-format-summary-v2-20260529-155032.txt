@@ -1,0 +1,16 @@
+﻿Billboard medium-format update summary
+Generated: 05/29/2026 15:50:33
+
+Mappings loaded:        162
+Pages matched/checked:  162
+Work IDs not found:     0
+Duplicate ID warnings:  0
+
+CSV report:
+D:\github\ron-english-billboards\data\generated\update-billboard-medium-format-map-v2-20260529-155032.csv
+
+Backup:
+D:\github-backups\ron-english-billboards\update-billboard-medium-format-v2-20260529-155032
+
+Mojibake scan: no suspicious mojibake characters found in updated page HTML.
+

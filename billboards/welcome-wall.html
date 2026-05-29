@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Welcome Wall | Ron English Catalogue Raisonné</title>
+  <title>Welcome Wall | Ron English Catalogue Raisonne</title>
+  <meta name="work-id" content="RE-011947" />
   <link rel="stylesheet" href="../css/styles.css" />
 
   <style>
@@ -18,10 +19,6 @@
 
     *{
       box-sizing:border-box;
-    }
-
-    html{
-      scroll-behavior:smooth;
     }
 
     body{
@@ -42,6 +39,9 @@
       flex-wrap:wrap;
       gap:10px;
       margin-bottom:22px;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
     }
 
     .nav-pill{
@@ -61,7 +61,9 @@
     }
 
     .page-header{
-      margin-bottom:22px;
+      margin:0 auto 22px;
+      text-align:center;
+      max-width:980px;
     }
 
     .eyebrow{
@@ -79,13 +81,14 @@
       letter-spacing:-.02em;
     }
 
-    .hero{
+    .hero-card{
       margin:30px 0 26px;
       border:1px solid var(--border);
       border-radius:var(--radius);
       overflow:hidden;
       background:var(--panel);
       box-shadow:var(--shadow);
+      padding:14px;
     }
 
     .image-link{
@@ -97,7 +100,9 @@
       display:block;
       width:100%;
       height:auto;
+      object-fit:contain;
       background:#f3f4f6;
+      border-radius:12px;
       transition:transform .15s ease;
     }
 
@@ -105,50 +110,131 @@
       transform:scale(1.01);
     }
 
-    .gallery{
-      display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:18px;
+    .work-meta{
+      max-width:920px;
+      margin:0 auto;
+      padding:0;
+      list-style:none;
+      line-height:1.65;
     }
 
-    .gallery-item{
+    .work-meta li{
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+
+    .section-block{
+      max-width:920px;
+      margin:2rem auto 0;
+      line-height:1.65;
+    }
+
+    .section-block h2{
+      margin:0 0 .75rem;
+      font-size:1.25rem;
+    }
+
+    .section-block p{
+      margin:.5rem 0 0;
+      color:#111;
+    }
+
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:18px;
+      margin-top:.85rem;
+    }
+
+    .gallery-card{
+      margin:0;
       border:1px solid var(--border);
       border-radius:16px;
       overflow:hidden;
       background:var(--panel);
       box-shadow:var(--shadow);
-      padding:14px;
+      padding:12px;
     }
 
-    .gallery-item .image-link img{
+    .gallery-card img{
       aspect-ratio:16 / 9;
       object-fit:contain;
-      background:var(--panel);
     }
 
-    footer{
+    .page-footer{
       margin-top:38px;
-      padding-top:16px;
+      padding-top:18px;
       border-top:1px solid var(--border);
       color:var(--muted);
       font-size:14px;
+      text-align:center;
+    }
+
+    .footer-pills{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+      margin:0 auto;
+    }
+
+    .footer-pill{
+      display:inline-block;
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid #d6e1ff;
+      background:#fff;
+      color:#111;
+      text-decoration:none;
+      font-size:14px;
+      line-height:1.2;
+    }
+
+    .footer-pill:hover{
+      background:#f3f6ff;
     }
 
     @media (max-width:700px){
-      .gallery{
-        grid-template-columns:1fr;
-      }
-
       .wrap{
         padding:22px 14px 48px;
       }
 
-      .gallery-item{
+      .hero-card,
+      .gallery-card{
         padding:10px;
       }
     }
   </style>
   <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+<style id="billboards-detail-centered-text-v1">
+/* BEGIN billboards detail centered text v1 */
+body main.wrap .page-header,
+body main.wrap .page-title,
+body main.wrap .work-meta,
+body main.wrap .work-meta li,
+body main.wrap .section-block,
+body main.wrap .section-block h2,
+body main.wrap .section-block p,
+body main.wrap .page-footer {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+body main.wrap .work-meta {
+  max-width: 920px !important;
+}
+
+body main.wrap .section-block {
+  max-width: 920px !important;
+}
+
+body main.wrap .eyebrow {
+  display: none !important;
+}
+/* END billboards detail centered text v1 */
+</style>
 </head>
 <body>
   <main class="wrap">
@@ -158,445 +244,291 @@
     </nav>
 
     <header class="page-header">
-      <p class="eyebrow">Billboard &amp; Poster Interventions</p>
-      <h1 class="page-title">Welcome Wall</h1>
+<h1 class="page-title">Welcome Wall</h1>
     </header>
 
-    <figure class="hero">
+    <figure class="hero-card">
       <a class="image-link" href="../images/billboards/welcome-wall.jpg">
         <img
           src="../images/billboards/welcome-wall.jpg"
           alt="Welcome Wall by Ron English"
+          loading="lazy"
         />
       </a>
     </figure>
 
-    <section class="gallery" aria-label="Image gallery">
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-2.jpg">
-          <img
-            src="../images/billboards/welcome-wall-2.jpg"
-            alt="Welcome Wall alternate view 2 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+    <ul class="work-meta" data-work-id="RE-011947">
+      <li><strong>Title:</strong> Welcome Wall</li>
+      <li><strong>Date:</strong> Not documented</li>
+      <li><strong>Location:</strong> Not documented</li>
+      <li><strong>Medium / format:</strong> poster</li>
+      <li><strong>Work ID:</strong> RE-011947</li>
+    </ul>
+<section class="section-block" aria-labelledby="image-gallery">
+      <h2 id="image-gallery">Image Gallery</h2>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-3.jpg">
-          <img
-            src="../images/billboards/welcome-wall-3.jpg"
-            alt="Welcome Wall alternate view 3 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+      <div class="gallery-grid">
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-2.jpg">
+            <img src="../images/billboards/welcome-wall-2.jpg" alt="Welcome Wall alternate view 2 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-4.jpg">
-          <img
-            src="../images/billboards/welcome-wall-4.jpg"
-            alt="Welcome Wall alternate view 4 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-3.jpg">
+            <img src="../images/billboards/welcome-wall-3.jpg" alt="Welcome Wall alternate view 3 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-5.jpg">
-          <img
-            src="../images/billboards/welcome-wall-5.jpg"
-            alt="Welcome Wall alternate view 5 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-4.jpg">
+            <img src="../images/billboards/welcome-wall-4.jpg" alt="Welcome Wall alternate view 4 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-6.jpg">
-          <img
-            src="../images/billboards/welcome-wall-6.jpg"
-            alt="Welcome Wall alternate view 6 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-5.jpg">
+            <img src="../images/billboards/welcome-wall-5.jpg" alt="Welcome Wall alternate view 5 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-7.jpg">
-          <img
-            src="../images/billboards/welcome-wall-7.jpg"
-            alt="Welcome Wall alternate view 7 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-6.jpg">
+            <img src="../images/billboards/welcome-wall-6.jpg" alt="Welcome Wall alternate view 6 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-8.jpg">
-          <img
-            src="../images/billboards/welcome-wall-8.jpg"
-            alt="Welcome Wall alternate view 8 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-7.jpg">
+            <img src="../images/billboards/welcome-wall-7.jpg" alt="Welcome Wall alternate view 7 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-9.jpg">
-          <img
-            src="../images/billboards/welcome-wall-9.jpg"
-            alt="Welcome Wall alternate view 9 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-8.jpg">
+            <img src="../images/billboards/welcome-wall-8.jpg" alt="Welcome Wall alternate view 8 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-10.jpg">
-          <img
-            src="../images/billboards/welcome-wall-10.jpg"
-            alt="Welcome Wall alternate view 10 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-9.jpg">
+            <img src="../images/billboards/welcome-wall-9.jpg" alt="Welcome Wall alternate view 9 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-11.jpg">
-          <img
-            src="../images/billboards/welcome-wall-11.jpg"
-            alt="Welcome Wall alternate view 11 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-10.jpg">
+            <img src="../images/billboards/welcome-wall-10.jpg" alt="Welcome Wall alternate view 10 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-12.jpg">
-          <img
-            src="../images/billboards/welcome-wall-12.jpg"
-            alt="Welcome Wall alternate view 12 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-11.jpg">
+            <img src="../images/billboards/welcome-wall-11.jpg" alt="Welcome Wall alternate view 11 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-13.jpg">
-          <img
-            src="../images/billboards/welcome-wall-13.jpg"
-            alt="Welcome Wall alternate view 13 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-12.jpg">
+            <img src="../images/billboards/welcome-wall-12.jpg" alt="Welcome Wall alternate view 12 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-14.jpg">
-          <img
-            src="../images/billboards/welcome-wall-14.jpg"
-            alt="Welcome Wall alternate view 14 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-13.jpg">
+            <img src="../images/billboards/welcome-wall-13.jpg" alt="Welcome Wall alternate view 13 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-15.jpg">
-          <img
-            src="../images/billboards/welcome-wall-15.jpg"
-            alt="Welcome Wall alternate view 15 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-14.jpg">
+            <img src="../images/billboards/welcome-wall-14.jpg" alt="Welcome Wall alternate view 14 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-16.jpg">
-          <img
-            src="../images/billboards/welcome-wall-16.jpg"
-            alt="Welcome Wall alternate view 16 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-15.jpg">
+            <img src="../images/billboards/welcome-wall-15.jpg" alt="Welcome Wall alternate view 15 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-17.jpg">
-          <img
-            src="../images/billboards/welcome-wall-17.jpg"
-            alt="Welcome Wall alternate view 17 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-16.jpg">
+            <img src="../images/billboards/welcome-wall-16.jpg" alt="Welcome Wall alternate view 16 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-18.jpg">
-          <img
-            src="../images/billboards/welcome-wall-18.jpg"
-            alt="Welcome Wall alternate view 18 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-17.jpg">
+            <img src="../images/billboards/welcome-wall-17.jpg" alt="Welcome Wall alternate view 17 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-19.jpg">
-          <img
-            src="../images/billboards/welcome-wall-19.jpg"
-            alt="Welcome Wall alternate view 19 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-18.jpg">
+            <img src="../images/billboards/welcome-wall-18.jpg" alt="Welcome Wall alternate view 18 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-20.jpg">
-          <img
-            src="../images/billboards/welcome-wall-20.jpg"
-            alt="Welcome Wall alternate view 20 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-19.jpg">
+            <img src="../images/billboards/welcome-wall-19.jpg" alt="Welcome Wall alternate view 19 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-21.jpg">
-          <img
-            src="../images/billboards/welcome-wall-21.jpg"
-            alt="Welcome Wall alternate view 21 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-20.jpg">
+            <img src="../images/billboards/welcome-wall-20.jpg" alt="Welcome Wall alternate view 20 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-22.jpg">
-          <img
-            src="../images/billboards/welcome-wall-22.jpg"
-            alt="Welcome Wall alternate view 22 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-21.jpg">
+            <img src="../images/billboards/welcome-wall-21.jpg" alt="Welcome Wall alternate view 21 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-23.jpg">
-          <img
-            src="../images/billboards/welcome-wall-23.jpg"
-            alt="Welcome Wall alternate view 23 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-22.jpg">
+            <img src="../images/billboards/welcome-wall-22.jpg" alt="Welcome Wall alternate view 22 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-24.jpg">
-          <img
-            src="../images/billboards/welcome-wall-24.jpg"
-            alt="Welcome Wall alternate view 24 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-23.jpg">
+            <img src="../images/billboards/welcome-wall-23.jpg" alt="Welcome Wall alternate view 23 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-25.jpg">
-          <img
-            src="../images/billboards/welcome-wall-25.jpg"
-            alt="Welcome Wall alternate view 25 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-24.jpg">
+            <img src="../images/billboards/welcome-wall-24.jpg" alt="Welcome Wall alternate view 24 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-26.jpg">
-          <img
-            src="../images/billboards/welcome-wall-26.jpg"
-            alt="Welcome Wall alternate view 26 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-25.jpg">
+            <img src="../images/billboards/welcome-wall-25.jpg" alt="Welcome Wall alternate view 25 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-27.jpg">
-          <img
-            src="../images/billboards/welcome-wall-27.jpg"
-            alt="Welcome Wall alternate view 27 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-26.jpg">
+            <img src="../images/billboards/welcome-wall-26.jpg" alt="Welcome Wall alternate view 26 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-28.jpg">
-          <img
-            src="../images/billboards/welcome-wall-28.jpg"
-            alt="Welcome Wall alternate view 28 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-27.jpg">
+            <img src="../images/billboards/welcome-wall-27.jpg" alt="Welcome Wall alternate view 27 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-29.jpg">
-          <img
-            src="../images/billboards/welcome-wall-29.jpg"
-            alt="Welcome Wall alternate view 29 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-28.jpg">
+            <img src="../images/billboards/welcome-wall-28.jpg" alt="Welcome Wall alternate view 28 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-30.jpg">
-          <img
-            src="../images/billboards/welcome-wall-30.jpg"
-            alt="Welcome Wall alternate view 30 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-29.jpg">
+            <img src="../images/billboards/welcome-wall-29.jpg" alt="Welcome Wall alternate view 29 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-31.jpg">
-          <img
-            src="../images/billboards/welcome-wall-31.jpg"
-            alt="Welcome Wall alternate view 31 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-30.jpg">
+            <img src="../images/billboards/welcome-wall-30.jpg" alt="Welcome Wall alternate view 30 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-32.jpg">
-          <img
-            src="../images/billboards/welcome-wall-32.jpg"
-            alt="Welcome Wall alternate view 32 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-31.jpg">
+            <img src="../images/billboards/welcome-wall-31.jpg" alt="Welcome Wall alternate view 31 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-33.jpg">
-          <img
-            src="../images/billboards/welcome-wall-33.jpg"
-            alt="Welcome Wall alternate view 33 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-32.jpg">
+            <img src="../images/billboards/welcome-wall-32.jpg" alt="Welcome Wall alternate view 32 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-34.jpg">
-          <img
-            src="../images/billboards/welcome-wall-34.jpg"
-            alt="Welcome Wall alternate view 34 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-33.jpg">
+            <img src="../images/billboards/welcome-wall-33.jpg" alt="Welcome Wall alternate view 33 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-35.jpg">
-          <img
-            src="../images/billboards/welcome-wall-35.jpg"
-            alt="Welcome Wall alternate view 35 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-34.jpg">
+            <img src="../images/billboards/welcome-wall-34.jpg" alt="Welcome Wall alternate view 34 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-36.jpg">
-          <img
-            src="../images/billboards/welcome-wall-36.jpg"
-            alt="Welcome Wall alternate view 36 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-35.jpg">
+            <img src="../images/billboards/welcome-wall-35.jpg" alt="Welcome Wall alternate view 35 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-37.jpg">
-          <img
-            src="../images/billboards/welcome-wall-37.jpg"
-            alt="Welcome Wall alternate view 37 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-36.jpg">
+            <img src="../images/billboards/welcome-wall-36.jpg" alt="Welcome Wall alternate view 36 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-38.jpg">
-          <img
-            src="../images/billboards/welcome-wall-38.jpg"
-            alt="Welcome Wall alternate view 38 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-37.jpg">
+            <img src="../images/billboards/welcome-wall-37.jpg" alt="Welcome Wall alternate view 37 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-39.jpg">
-          <img
-            src="../images/billboards/welcome-wall-39.jpg"
-            alt="Welcome Wall alternate view 39 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-38.jpg">
+            <img src="../images/billboards/welcome-wall-38.jpg" alt="Welcome Wall alternate view 38 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-40.jpg">
-          <img
-            src="../images/billboards/welcome-wall-40.jpg"
-            alt="Welcome Wall alternate view 40 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-39.jpg">
+            <img src="../images/billboards/welcome-wall-39.jpg" alt="Welcome Wall alternate view 39 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-41.jpg">
-          <img
-            src="../images/billboards/welcome-wall-41.jpg"
-            alt="Welcome Wall alternate view 41 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-40.jpg">
+            <img src="../images/billboards/welcome-wall-40.jpg" alt="Welcome Wall alternate view 40 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-42.jpg">
-          <img
-            src="../images/billboards/welcome-wall-42.jpg"
-            alt="Welcome Wall alternate view 42 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-41.jpg">
+            <img src="../images/billboards/welcome-wall-41.jpg" alt="Welcome Wall alternate view 41 by Ron English" loading="lazy" />
+          </a>
+        </figure>
 
-      <figure class="gallery-item">
-        <a class="image-link" href="../images/billboards/welcome-wall-43.jpg">
-          <img
-            src="../images/billboards/welcome-wall-43.jpg"
-            alt="Welcome Wall alternate view 43 by Ron English"
-            loading="lazy"
-          />
-        </a>
-      </figure>
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-42.jpg">
+            <img src="../images/billboards/welcome-wall-42.jpg" alt="Welcome Wall alternate view 42 by Ron English" loading="lazy" />
+          </a>
+        </figure>
+
+        <figure class="gallery-card">
+          <a class="image-link" href="../images/billboards/welcome-wall-43.jpg">
+            <img src="../images/billboards/welcome-wall-43.jpg" alt="Welcome Wall alternate view 43 by Ron English" loading="lazy" />
+          </a>
+        </figure>
+
+      </div>
     </section>
 
-    <footer>
-      Published via GitHub Pages for long-term public access.
+    <footer class="page-footer">
+      <nav class="footer-pills" aria-label="Footer navigation">
+        <a class="footer-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue Home</a>
+        <a class="footer-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/terms-of-use.html">Terms of Use, Copyright &amp; Research Notice</a>
+      </nav>
     </footer>
   </main>
 </body>
 </html>
-

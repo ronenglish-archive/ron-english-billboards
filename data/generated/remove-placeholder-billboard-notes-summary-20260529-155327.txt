@@ -1,0 +1,15 @@
+﻿Remove placeholder billboard Notes summary
+Generated: 05/29/2026 15:53:28
+
+Detail pages scanned:        163
+Pages changed:               162
+Pages unchanged:             1
+Actual/non-placeholder Notes skipped: 0
+Index changed:               No
+
+Backup:
+D:\github-backups\ron-english-billboards\remove-placeholder-billboard-notes-v1-20260529-155327
+
+Mojibake warning: suspicious characters found in:
+  got-coke.html
+

@@ -1,0 +1,104 @@
+﻿Billboards Google Sheets Hero Formula Survey
+Generated: 05/29/2026 15:15:20
+
+Section root: D:\github\ron-english-billboards\billboards
+Index file:   D:\github\ron-english-billboards\billboards\index.html
+
+Index cards found:          162
+Linked detail pages found:  155
+Missing linked pages:       7
+Pages with galleries:       61
+Pages already showing IDs:  0
+Unlinked HTML pages:        1
+
+Proposed Work ID assignment starts at RE-011795.
+Available IDs used by this survey: RE-011795-RE-011956
+Last proposed ID:           RE-011956
+Next available after block: RE-011957
+
+Available ID rule used:
+  RE-011795-RE-011970
+  RE-011988 and beyond
+  RE-011971-RE-011987 skipped/reserved if reached
+
+Google Sheets TSV:
+D:\github\ron-english-billboards\data\generated\billboards-google-sheets-hero-formulas-20260529-151519.tsv
+
+CSV:
+D:\github\ron-english-billboards\data\generated\billboards-google-sheets-hero-formulas-20260529-151519.csv
+
+Missing linked detail pages:
+  all-american.html - All-American
+  batboy-bronx-ny-1987.html - Batboy, Bronx, NY 1987
+  camel-juniors-nyc-1991.html - Camel Juniors, NYC, 1991
+  got-coke-and-sugar-the-other-white-powder.html - Got Coke
+  jihad-is-over-version-2.html - Jihad Is Over Version 2
+  strippers.html - Strippers
+  wellington-court-mural-project.html - Wellington Court Mural Project
+
+Unlinked HTML pages in billboards folder:
+  got-coke.html
+
+Pages with galleries to preserve:
+  1000-points-of-light-nyc-1991.html - 1000 Points of Light, NYC, 1991 - 1 gallery images
+  abortion-hanger-1.html - Abortion Hanger - 7 gallery images
+  absolut-wallpaper-rome-guernica.html - Absolut Wallpaper Rome - Guernica - 10 gallery images
+  barney-vs-godzilla.html - Barney vs Godzilla - 2 gallery images
+  beacon-windows.html - Beacon Windows - 5 gallery images
+  bogus-vogue.html - Bogus Vogue - 1 gallery images
+  camel-junior-nyc-1991.html - Camel Junior, NYC, 1991 - 2 gallery images
+  censorship-is-good-because-nyc-1990.html - Censorship Is Good Because..., NYC, 1990 - 4 gallery images
+  circus.html - Circus - 1 gallery images
+  combrats.html - Combrats - 1 gallery images
+  de-la-barracuda-wall-la-2011.html - De La Barracuda Wall, LA, 2011 - 1 gallery images
+  evolucion-non-e-para-todos.html - Evolution - Non E Para Todos - 1 gallery images
+  fish-eyes.html - Fish Eyes - 1 gallery images
+  good-to-the-last-drop.html - Good to the Last Drop - 1 gallery images
+  greetings-from-the-occupation-1-london.html - Greetings from the Occupation 1, London - 1 gallery images
+  greetings-from-the-occupation-version-2.html - Greetings from the Occupation Version 2 - 7 gallery images
+  greys-autonomy-austin-tx-1985.html - Grey's Autonomy, Austin, TX 1985 - 1 gallery images
+  grinny-gaylord.html - Grinny Gaylord - 1 gallery images
+  heart-los-angeles-ca-1996.html - Heart Los Angeles, CA 1996 - 1 gallery images
+  home-of-the-homeless-nyc-1992.html - Home of the Homeless, NYC, 1992 - 1 gallery images
+  hook-any-new-kids-today.html - Hook Any New Kids Today - 1 gallery images
+  houston-bowery-wall.html - Houston Bowery Wall - 5 gallery images
+  i-wanna-be-erected.html - I Wanna Be Erected - 1 gallery images
+  inauguration-obama.html - Inauguration Obama - 1 gallery images
+  its-a-whole-new-world-road-banner.html - It's a Whole New World - Road Banner - 1 gallery images
+  jesus-drove-an-suv.html - Jesus Drove an SUV - 1 gallery images
+  jesus-returns.html - Jesus Returns - 1 gallery images
+  jihad-is-over-amsterdam.html - Jihad Is Over, Amsterdam - 1 gallery images
+  jihad-is-over-version-1.html - Jihad Is Over Version 1 - 1 gallery images
+  just-do-it.html - Just Do It - 1 gallery images
+  king-of-beers-version-1.html - The King of Beers Version 1 - 1 gallery images
+  king-of-beers-version-2.html - The King of Beers Version 2 - 1 gallery images
+  last-supper-at-mcdonalds-dallas-tx-1994-installing.html - Last Supper at McDonalds, Dallas, TX 1994 - 1 gallery images
+  les-pauvres.html - Les Pauvres - 1 gallery images
+  libertys-first-casualty.html - Liberty's First Casualty - 1 gallery images
+  lust-dallas-tx-1981.html - Lust, Dallas, TX 1981 - 1 gallery images
+  marlboro-boy.html - Marlboro Boy - 2 gallery images
+  mc-super-sized.html - MC Super Sized - 1 gallery images
+  monica.html - Monica and Marilyn - 2 gallery images
+  more-jingoism-less-journalism.html - More Jingoism Less Journalism - 1 gallery images
+  nova-orden-mundial.html - Nova Orden Mundial - 4 gallery images
+  nova-xeracion.html - Nova Xeracion - 6 gallery images
+  observe-listen-reveal.html - Observe, Listen, Reveal - 3 gallery images
+  obama.html - Obama - 20 gallery images
+  one-god-one-party.html - One God, One Party - 1 gallery images
+  over-50-billion-super-sized.html - Over 50 Billion Super-Sized - 1 gallery images
+  playdate-iran.html - Playdate Iran - 2 gallery images
+  rayban.html - Rayban - 1 gallery images
+  saddams-suvs.html - Saddam's SUVs - 3 gallery images
+  se-cres-no-ten-porque-ser-verdade.html - Se Cres No Ten Porque Ser Verdade - 4 gallery images
+  squirrel-squirt-beer.html - Squirrel Squirt Beer - 2 gallery images
+  supersize-your-thighs.html - Supersize Your Thighs - 1 gallery images
+  surveillance-austin-tx-1985.html - Surveillance, Austin, TX 1985 - 2 gallery images
+  the-gefkens.html - The Gefkens - 1 gallery images
+  the-invading-aliens-from-the-beach-party-austin-tx-1985.html - The Invading Aliens from the Beach Party, Austin, TX 1985 - 1 gallery images
+  to-serve-man.html - To Serve Man - 11 gallery images
+  we-deceive-you-believe.html - We Deceive, You Believe - 1 gallery images
+  we-deceive-you-believe-denver-co.html - We Deceive, You Believe, Denver CO - 1 gallery images
+  welcome-wall.html - Welcome Wall - 42 gallery images
+  woodstok-wall.html - Woodstock Wall - 2 gallery images
+  you-are-not-a-clone-version-2.html - You Are Not a Clone, Version 2 - 2 gallery images
+

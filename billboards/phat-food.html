@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Phat Food | Ron English Catalogue Raisonné</title>
+  <title>Phat Food | Ron English Catalogue Raisonne</title>
+  <meta name="work-id" content="RE-011893" />
   <link rel="stylesheet" href="../css/styles.css" />
 
   <style>
@@ -16,9 +17,9 @@
       --panel:#f8fafc;
     }
 
-    *{ box-sizing:border-box; }
-
-    html{ scroll-behavior:smooth; }
+    *{
+      box-sizing:border-box;
+    }
 
     body{
       margin:0;
@@ -38,6 +39,9 @@
       flex-wrap:wrap;
       gap:10px;
       margin-bottom:22px;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
     }
 
     .nav-pill{
@@ -56,7 +60,11 @@
       border-color:#bfd1ff;
     }
 
-    .page-header{ margin-bottom:22px; }
+    .page-header{
+      margin:0 auto 22px;
+      text-align:center;
+      max-width:980px;
+    }
 
     .eyebrow{
       margin:0 0 8px;
@@ -73,13 +81,14 @@
       letter-spacing:-.02em;
     }
 
-    .hero{
+    .hero-card{
       margin:30px 0 26px;
       border:1px solid var(--border);
       border-radius:var(--radius);
       overflow:hidden;
       background:var(--panel);
       box-shadow:var(--shadow);
+      padding:14px;
     }
 
     .image-link{
@@ -91,7 +100,9 @@
       display:block;
       width:100%;
       height:auto;
+      object-fit:contain;
       background:#f3f4f6;
+      border-radius:12px;
       transition:transform .15s ease;
     }
 
@@ -99,19 +110,131 @@
       transform:scale(1.01);
     }
 
-    footer{
+    .work-meta{
+      max-width:920px;
+      margin:0 auto;
+      padding:0;
+      list-style:none;
+      line-height:1.65;
+    }
+
+    .work-meta li{
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+
+    .section-block{
+      max-width:920px;
+      margin:2rem auto 0;
+      line-height:1.65;
+    }
+
+    .section-block h2{
+      margin:0 0 .75rem;
+      font-size:1.25rem;
+    }
+
+    .section-block p{
+      margin:.5rem 0 0;
+      color:#111;
+    }
+
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:18px;
+      margin-top:.85rem;
+    }
+
+    .gallery-card{
+      margin:0;
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      background:var(--panel);
+      box-shadow:var(--shadow);
+      padding:12px;
+    }
+
+    .gallery-card img{
+      aspect-ratio:16 / 9;
+      object-fit:contain;
+    }
+
+    .page-footer{
       margin-top:38px;
-      padding-top:16px;
+      padding-top:18px;
       border-top:1px solid var(--border);
       color:var(--muted);
       font-size:14px;
+      text-align:center;
+    }
+
+    .footer-pills{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+      margin:0 auto;
+    }
+
+    .footer-pill{
+      display:inline-block;
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid #d6e1ff;
+      background:#fff;
+      color:#111;
+      text-decoration:none;
+      font-size:14px;
+      line-height:1.2;
+    }
+
+    .footer-pill:hover{
+      background:#f3f6ff;
     }
 
     @media (max-width:700px){
-      .wrap{ padding:22px 14px 48px; }
+      .wrap{
+        padding:22px 14px 48px;
+      }
+
+      .hero-card,
+      .gallery-card{
+        padding:10px;
+      }
     }
   </style>
   <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+<style id="billboards-detail-centered-text-v1">
+/* BEGIN billboards detail centered text v1 */
+body main.wrap .page-header,
+body main.wrap .page-title,
+body main.wrap .work-meta,
+body main.wrap .work-meta li,
+body main.wrap .section-block,
+body main.wrap .section-block h2,
+body main.wrap .section-block p,
+body main.wrap .page-footer {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+body main.wrap .work-meta {
+  max-width: 920px !important;
+}
+
+body main.wrap .section-block {
+  max-width: 920px !important;
+}
+
+body main.wrap .eyebrow {
+  display: none !important;
+}
+/* END billboards detail centered text v1 */
+</style>
 </head>
 <body>
   <main class="wrap">
@@ -121,23 +244,32 @@
     </nav>
 
     <header class="page-header">
-      <p class="eyebrow">Billboard &amp; Poster Interventions</p>
-      <h1 class="page-title">Phat Food</h1>
+<h1 class="page-title">Phat Food</h1>
     </header>
 
-    <figure class="hero">
+    <figure class="hero-card">
       <a class="image-link" href="../images/billboards/phat-food.jpg">
         <img
           src="../images/billboards/phat-food.jpg"
           alt="Phat Food by Ron English"
+          loading="lazy"
         />
       </a>
     </figure>
 
-    <footer>
-      Published via GitHub Pages for long-term public access.
+    <ul class="work-meta" data-work-id="RE-011893">
+      <li><strong>Title:</strong> Phat Food</li>
+      <li><strong>Date:</strong> Not documented</li>
+      <li><strong>Location:</strong> Not documented</li>
+      <li><strong>Medium / format:</strong> billboard</li>
+      <li><strong>Work ID:</strong> RE-011893</li>
+    </ul>
+<footer class="page-footer">
+      <nav class="footer-pills" aria-label="Footer navigation">
+        <a class="footer-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue Home</a>
+        <a class="footer-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/terms-of-use.html">Terms of Use, Copyright &amp; Research Notice</a>
+      </nav>
     </footer>
   </main>
 </body>
 </html>
-
