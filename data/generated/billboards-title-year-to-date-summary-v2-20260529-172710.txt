@@ -1,0 +1,20 @@
+﻿Billboards title-year-to-date cleanup summary
+Generated: 05/29/2026 17:27:11
+
+Detail pages scanned: 163
+Rows updated:         33
+Title fields changed: 33
+Date fields changed:  33
+Index titles changed: 33
+Skipped - no year:    130
+Skipped - multiple:   0
+
+CSV report:
+D:\github\ron-english-billboards\data\generated\billboards-title-year-to-date-v2-20260529-172710.csv
+
+Backup:
+D:\github-backups\ron-english-billboards\billboards-title-year-to-date-v2-20260529-172710
+
+Mojibake warning: suspicious characters found in:
+  got-coke.html
+
