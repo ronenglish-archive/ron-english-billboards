@@ -1,0 +1,20 @@
+﻿Remove Terms link from detail pages summary
+Generated: 05/29/2026 17:38:19
+
+Section: billboards
+Section root: D:\github\ron-english-billboards\billboards
+Detail pages scanned: 163
+Pages changed:        162
+Index changed:        No
+Terms still present warnings: 0
+Mojibake warnings:    
+
+CSV report:
+D:\github\ron-english-billboards\data\generated\remove-terms-link-detail-pages-billboards-v1-20260529-173818.csv
+
+Backup:
+D:\github-backups\ron-english-billboards\remove-terms-link-detail-pages-v1-20260529-173818
+
+Pages with suspicious mojibake-like characters:
+  got-coke.html
+
